@@ -1,0 +1,10 @@
+nav{
+    background-color: coral;
+}
+a{
+    color: white;
+    padding: 20px;
+    width: auto;
+    text-align: center;
+    text-decoration: none;
+}

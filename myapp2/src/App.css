@@ -36,24 +36,3 @@
     transform: rotate(360deg);
   }
 }
-div{
-  text-align: center;
-  margin: 50px auto;
-  background-color: rgb(154, 255, 184);
-}
-span{
-  color: red;
-}
-h1{
-  color: rgb(255, 29, 29);
-}
-table{
-  border-radius: 10px;
-  
-}
-tr{
-  text-align: center;
-}
-.a{
-  color: green;
-}
