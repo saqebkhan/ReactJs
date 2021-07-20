@@ -1,13 +1,12 @@
-import logo from './logo.svg';
-import './App.css';
-import{SectionArticle} from "./Component/SectionArticle"
+import React from 'react';
+import HeaderComponent from './Component/A_HeaderSection/HeaderComponent';
+import BodySection from './Component/B_BodySection/BodySection';
 
 function App() {
   return (
 <div className="App">
-  <h1>Learning React With core Language</h1>
-  <br></br>
-<SectionArticle firstInfo="Tags" SecondInfo="Attributes" ThirdInfo="Void Elements" FourthInfo="Structure"></SectionArticle>
+<HeaderComponent/>
+<BodySection/>
 
 
 

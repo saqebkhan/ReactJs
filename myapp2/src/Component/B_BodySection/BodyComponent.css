@@ -1,10 +1,21 @@
-nav{
-    background-color: coral;
-}
-a{
-    color: white;
-    padding: 20px;
-    width: auto;
+img{
     text-align: center;
-    text-decoration: none;
+    width: 100%;
+    height: 1000px;
+
 }
+.a{
+    background-color: rgb(255, 255, 255);
+    color: white;
+}
+.b{
+    background-color: gray;
+}
+/* div{
+    background-image: url(./Image2.jpg);
+
+} */
+/* body{
+    background-image: url(./Image2.jpg);
+
+} */

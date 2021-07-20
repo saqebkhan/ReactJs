@@ -1,17 +1,37 @@
 import React from 'react';
-export 
+
+import "./HeaderSection.css"
 
 const HeaderComponent = () => {
     return (
         <div>
-            <nav>
-                <a href="">Home</a>
-                <a href="">Product</a>
-                <a href="">Services</a>
-                <a href="">Contact Us</a>
-                <a href="">About Us</a>
-            </nav>
-        </div>
+    <nav>
+       <a href="">Home</a>
+       <div class="dropdown1">
+        <a href="">Services</a>
+         <div class="droplist">
+            <a href="">Services1</a>
+            <a href="">Services2</a>
+            <a href="">Services3</a>
+         </div>
+       </div>
+       <a href="">About</a>
+       <div class="dropdown1">
+       <a href="">Products</a>
+       <div class="droplist">
+       <a href="">Laptops</a>
+       <a href="">Monitors</a>
+       <a href="">CPU</a>
+       <a href="">Other Computer Accessories</a>
+       </div>
+       </div>
+       <a href="">Contet Us</a>
+
+                <button>Search</button>
+                <input type="text" />
+                
+        </nav>
+            </div>
     );
 };
 
