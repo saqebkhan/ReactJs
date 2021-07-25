@@ -1,4 +1,4 @@
-export const CourseInfo=({courseName , instituteName ,cityName , mobileNumber})=>{
+export const CourseInfo=({courseName , instituteName ,city , mobileNumber})=>{
 
     return (
     
@@ -19,7 +19,7 @@ export const CourseInfo=({courseName , instituteName ,cityName , mobileNumber})=
 <tr>
 <td>City</td>
 <td>:</td>
-<td>{cityName}</td>
+<td>{city}</td>
 </tr>
 
 <tr>
