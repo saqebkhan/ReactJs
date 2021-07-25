@@ -1,6 +1,8 @@
 import React from 'react';
 
 import "./HeaderSection.css"
+import Button from 'react-bootstrap/Button';
+
 
 const HeaderComponent = () => {
     return (
@@ -31,6 +33,16 @@ const HeaderComponent = () => {
                 <input type="text" />
                 
         </nav>
+        <br></br>
+        <br></br>
+
+        <br></br>
+        <br></br>
+
+
+
+        <Button variant="primary">Sufyan</Button>
+
             </div>
     );
 };
