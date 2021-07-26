@@ -37,11 +37,13 @@ const HeaderComponent = () => {
         <br></br>
 
         <br></br>
-        <br></br>
+                
 
 
-
+        <center>
         <Button variant="primary">Sufyan</Button>
+
+        </center>
 
             </div>
     );
