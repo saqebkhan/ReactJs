@@ -21,30 +21,44 @@
 // export default App;
 ///////////////////////for Counter ////////////////////
 
-// import './App.css';
-// import  { CarouselParent } from './Components/CarouselParent';
-// function App () {
-//     return(
-//         <div>
-//             <CarouselParent/>
-//         </div>
-//     )
-// }
-
-// export default App;
-///////////////////////////////////////////////////////////////////////////
-import React from 'react';
-import {RowColForm} from "./Components/RowColForm"
-
+import './App.css';
+import  { CarouselParent } from './Components/CarouselParent';
+import { NavBar} from './Components/NavBar'
 function App () {
     return(
         <div>
-            <RowColForm />
-
+            
+            <NavBar/>
+            <CarouselParent/>
+            
         </div>
     );
+};
+
+export default App;
+///////////////////////////////////////////////////////////////////////////
+// import React from 'react';
+// import './App.css';
+// import { RowCol } from "./Components/RowCol";
+
+// function App () {
+//     return(
+//             <RowCol/>
+
+//     )
 
     
-};
+// }
             
-export default App;
+// export default App;
+//////////////////////////////////////////////////
+// import React from 'react';
+// import './App.css';
+// import {GridLayout} from "./Components/GridLayout";
+
+// function App () {
+//     return (
+//         <GridLayout/>
+//     );
+// };
+// export default App;
