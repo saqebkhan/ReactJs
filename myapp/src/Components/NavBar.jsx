@@ -9,7 +9,7 @@ export const NavBar = () => {
         <div class="overlay"></div>
         <div class="container">
             <nav>
-                <h1 class="brand"><a href="index.html">Br<span>a</span>nd</a></h1>
+                <h1 class="brand"><a href="index.html"><span style={{color:"blue"}}><b>Pickup</b></span><span style={{color:"yellow"}}>Biz</span></a></h1>
                 <ul>
                     <li><a href="#">Home</a></li>
                     <li><a href="#">Services</a></li>
