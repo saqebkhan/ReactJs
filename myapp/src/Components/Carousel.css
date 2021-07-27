@@ -1,0 +1,16 @@
+.d-block w-100{
+    width: 20px;
+}
+.abc{
+    width: 20%;
+}
+h3{
+    font-size: large;
+    background-color: rgba(138, 136, 255, 0.6);
+    color: black;
+}
+p{
+    font-size: large;
+    color: black;
+    background-color: rgba(255, 245, 154, 0.6);
+}
