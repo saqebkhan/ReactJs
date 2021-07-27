@@ -39,11 +39,16 @@ export default App;
 ///////////////////////////////////////////////////////////////////////////
 // import React from 'react';
 // import './App.css';
-// import { RowCol } from "./Components/RowCol";
+// // import { RowCol } from "./Components/RowCol";
+// import { NewComp } from "./NewComp";
+
+
 
 // function App () {
 //     return(
-//             <RowCol/>
+//             // <RowCol/>
+
+//             <NewComp/>
 
 //     )
 
