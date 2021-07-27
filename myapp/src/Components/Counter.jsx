@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Button } from 'react-bootstrap';
 
- const Counter = () => {
+ export const Counter = () => {
   const [cntr, setCntr] = useState(0);
   return (
     <div>
