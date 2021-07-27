@@ -1,6 +1,31 @@
-/* export const RowCol = () => {
-    return
-Col{
-    padding: 30px;
-}
+/* .col-md-4{
+    background-color: rgba(255, 0, 0, 0.562);
+    padding: 40px;
 } */
+/* .col{
+    background-color: rgb(0, 255, 106);
+    padding: 8px;
+} */
+.card{
+    background-color: yellow;
+    margin-top: 80px;
+    padding: 10px;
+}
+/* .col-md-4Acc{
+    background-color: black;
+} */
+#abc{
+    background-color: rgb(192, 123, 123);
+}
+#abcAcc{
+    background-color: rgb(0, 0, 0);
+}
+.img{
+    margin-top: 100px;
+}
+#abcd{
+    background-color: rgb(255, 0, 0);
+}
+#abcdAcc{
+    background-color: rgb(0, 0, 0);
+}
