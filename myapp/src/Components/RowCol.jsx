@@ -159,31 +159,30 @@ export const RowCol = () => {
                   </p>
                   {` House Number ${line1} ,`}
                 </Row>
-                
 
                 {`${line2},`}
-                
 
                 {`${city},`}
-                
 
                 {`${state}.`}
+
+                <img src="../logo192.png" alt="" className="img" />
               </Card>
             </Col>
           </Row>
         </Col>
-        
+
         <Col md={2}>
-        <Image
-        class="img"
-        src={`bulb${bulbState}.png`}
-        height="200px"
-        width="100px"
-        onClick={() =>
-          bulbState === "Off" ? setBulbState("On") : setBulbState("Off")
-        }>
-          </Image>
-          </Col>
+          <Image
+            class="img"
+            src={`bulb${bulbState}.png`}
+            height="200px"
+            width="100px"
+            onClick={() =>
+              bulbState === "Off" ? setBulbState("On") : setBulbState("Off")
+            }
+          ></Image>
+        </Col>
       </Row>
     </div>
   );
