@@ -5,10 +5,12 @@ import "./Carousel.css";
 export const CarouselChild = ({ item }) => {
   return (
     <div style={{ height: "600px" }}>
-      <Carousel class="abc">
+      <center>
+      <Carousel className="abc">
+        
         <Carousel.Item interval={4000}>
           <img
-            className="d-block w-100"
+            className="imgs"
             src="https://apexvisas.ae/wp-content/uploads/2018/08/1.jpg"
             alt="First slide"
             style={{ height: "500px" }}
@@ -22,7 +24,7 @@ export const CarouselChild = ({ item }) => {
         </Carousel.Item>
         <Carousel.Item interval={3500}>
           <img
-            className="d-block w-100"
+            className="imgs"
             src="https://www.studyfinds.org/wp-content/uploads/2018/08/adult-american-arms-1265902.jpg"
             alt="Second slide"
             style={{ height: "500px" }}
@@ -36,7 +38,7 @@ export const CarouselChild = ({ item }) => {
         </Carousel.Item>
         <Carousel.Item interval={3000}>
           <img
-            className="d-block w-100"
+            className="imgs"
             src="https://buffer.com/resources/content/images/resources/wp-content/uploads/2018/11/free-images-featured.png"
             alt="Third slide"
             style={{ height: "500px" }}
@@ -49,6 +51,8 @@ export const CarouselChild = ({ item }) => {
           </Carousel.Caption>
         </Carousel.Item>
       </Carousel>
+      </center>
     </div>
   );
 };
+
