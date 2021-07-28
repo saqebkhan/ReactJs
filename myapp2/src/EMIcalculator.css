@@ -1,0 +1,42 @@
+/* input{
+    background-color: aqua;
+}
+.card{
+    background-color: brown;
+    padding: 20px;
+   
+}
+/* .col-md-8{
+    background-color: yellow;
+} */
+/* input{ */
+    /* padding: 20px; */
+
+/* } */ 
+.Calc{
+    background-color: rgb(255, 205, 112);
+    padding-top: 30px;
+    padding-bottom:5px;
+    box-shadow: 0px 10px 8px 6px;
+    border-radius: 12px;
+    width: 95%;
+    margin-left: 40px;
+}
+Button{
+    margin-right: 12px;
+}
+.input1{
+    box-shadow: 0px 5px 5px 0px;
+    border-radius: 2px;
+}
+.input2{
+    box-shadow: 0px 5px 5px 0px;
+}
+.input3{
+    box-shadow: 0px 5px 5px 0px;
+}
+.button{
+    box-shadow: 2px 2px 2px 2px;
+
+
+}
