@@ -1,17 +1,31 @@
 import React from "react";
-import {Button} from 'react-bootstrap'
+import { Button } from "react-bootstrap";
 import "./Piano.css";
 
- const Piano = () => {
+const Piano = () => {
   return (
-    <div>
-      <Button variant="outline-dark">SA</Button>
-      <Button variant="outline-dark">RE</Button>
-      <Button variant="outline-dark">GA</Button>
-      <Button variant="outline-dark">MA</Button>
-      <Button variant="outline-dark">PA</Button>
-      <Button variant="outline-dark">DA</Button>
-      <Button variant="outline-dark">NI</Button>
+    <div className="sound">
+      <Button variant="outline-dark" className="sa">
+        SA
+      </Button>
+      <Button variant="outline-dark" className="sa">
+        RE
+      </Button>
+      <Button variant="outline-dark" className="sa">
+        GA
+      </Button>
+      <Button variant="outline-dark" className="sa">
+        MA
+      </Button>
+      <Button variant="outline-dark" className="sa">
+        PA
+      </Button>
+      <Button variant="outline-dark" className="sa">
+        DA
+      </Button>
+      <Button variant="outline-dark" className="sa">
+        NI
+      </Button>
     </div>
   );
 };
