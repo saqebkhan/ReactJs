@@ -1,8 +1,12 @@
 // import "./App.css";
-// import { Cources } from "./components/Cources";
+// // import { Cources } from "./components/Cources";
+// import {NewComp} from "./NewComp";
 
 // function App() {
-//   return <Cources />;
+//     return(
+//         <NewComp />
+// //    <Cources />
+//     )
 // }
 
 // export default App;
@@ -24,23 +28,26 @@
 import './App.css';
 import  { CarouselParent } from './Components/CarouselParent';
 import { NavBar} from './Components/NavBar'
+import { Cards } from  './Components/Cards'
 function App () {
     return(
         <div>
             
             <NavBar/>
             <CarouselParent/>
+            <Cards/>
+
             
         </div>
     );
 };
 
-export default App;
+export default App; 
 ///////////////////////////////////////////////////////////////////////////
 // import React from 'react';
 // import './App.css';
-// import { RowCol } from "./Components/RowCol";
-// // import { NewComp } from "./NewComp";
+// // import { RowCol } from "./Components/RowCol";
+// import { NewComp } from "./NewComp";
 
 
 
@@ -48,7 +55,7 @@ export default App;
 //     return(
 //             // <RowCol/>
 
-//             // <NewComp/>
+//             <NewComp/>
 
 //     )
 
