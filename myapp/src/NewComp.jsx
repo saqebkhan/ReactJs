@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Card, Button } from "react-bootstrap";
 
+
 export const NewComp = () => {
   const [colorName, setColorName] = useState("Orange");
 
@@ -13,7 +14,7 @@ export const NewComp = () => {
         <Button
           variant="link"
           onClick={() =>
-            colorName === "blue" ? setColorName("purple") : setColorName("blue")
+            colorName === "blue" ? setColorName("brown") : setColorName("blue")
           }
         >
           Change Me
