@@ -14,7 +14,7 @@
 
 /* } */ 
 .Calc{
-    background-color: rgb(255, 205, 112);
+    background-color: rgb(255, 205, 112) !important;
     padding-top: 30px;
     padding-bottom:5px;
     box-shadow: 0px 10px 8px 6px;
