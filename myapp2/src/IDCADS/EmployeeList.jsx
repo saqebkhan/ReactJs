@@ -7,7 +7,7 @@ import { EmployeeReducer } from "../Reducer/EmployeeReducer";
 export const EmployeeList = () => {
   const [empArr, setEmpArr] = useState(EmployeeReducer.Data);
   const [searchText, setSearchText] = useState(" ");
-  useEffect(() => {
+  useEffect (() => {
     const filterArr = empArr.filter(
       (item) =>
         item.Name.toLowerCase().includes(searchText.toLowerCase()) ||
@@ -15,19 +15,19 @@ export const EmployeeList = () => {
     );
     if (searchText === "") setEmpArr(EmployeeReducer.Data);
     else setEmpArr(filterArr);
-  }, [searchText]);
+  }, [searchText])
   return (
     <Card className="employeelist">
       <h2>Employee List</h2>
       <Form>
         <Form.Control
           type="text"
-          onChange={(e) => setSearchText(e.target.value)}
+          onChange={(e) => setSearchText(e.target.value)} placeholder="Search"
         ></Form.Control>
       </Form>
       <Row>
         {empArr.map((item) => (
-          <Col md={4}>
+          <Col md={3}>
             <EmployeeItem itemData={item} />
           </Col>
         ))}
@@ -35,3 +35,4 @@ export const EmployeeList = () => {
     </Card>
   );
 };
+
