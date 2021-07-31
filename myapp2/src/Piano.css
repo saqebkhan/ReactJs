@@ -1,12 +1,12 @@
-/* Button{
+Button{
     float: left;
-    height: 300px; */
-    /* margin-left: 4px; */
-    /* margin-top: 20px; */
-    /* padding: 12px; */
-    /* box-shadow: 0px 6px 6px 0px;
-    margin-left: 4px; */
-/* }
+    height: 300px; 
+    margin-left: 4px;
+     margin-top: 20px; 
+    padding: 12px !important;
+     box-shadow: 0px 6px 6px 0px;
+    margin-left: 4px;
+}
 h1{
     background-color: black;
     color: white;
@@ -27,4 +27,4 @@ h1{
 }
 .thirdbtn{
     height: auto;
-} */
+}
