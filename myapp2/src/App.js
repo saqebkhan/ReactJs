@@ -6,7 +6,8 @@ import React from 'react';
 // import {Row,Col, Card} from 'react-bootstrap'
 // import AudioPlayer from './AudioPlayer';
 // import {Idcard} from './Idcard'
-import { EmployeeList} from './IDCADS/EmployeeList' 
+// import { EmployeeList} from './IDCADS/EmployeeList' 
+import {Practice} from './IDCADS/Practice'
 
 function App() {
   return (
@@ -20,12 +21,10 @@ function App() {
 <br/>
 <AudioPlayer/> */}
 {/* <Idcard/> */}
-<EmployeeList/>
-
-
+{/* <EmployeeList/> */}
+<Practice/>
 
 </div>
   );
-}
-
+};
 export default App;
