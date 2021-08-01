@@ -9,22 +9,24 @@ return (
 <section>
 <article>
 
-<ul>HTML</ul>
+<ul>HTML
 <li>{firstInfo}</li>
 <li>{SecondInfo}</li>
 <li>{ThirdInfo}</li>
 <li>{FourthInfo}</li>
+</ul>
 </article>
 
 </section>
 <section>
 <article class="a">
 
-<ol>CSS</ol>
+<ol>CSS
 <li>{firstInfo}</li>
 <li>{SecondInfo}</li>
 <li>{ThirdInfo}</li>
 <li>{FourthInfo}</li>
+</ol>
 </article>
 
 </section>
@@ -34,3 +36,5 @@ return (
     );
 
 }
+
+export default SectionArticle
