@@ -1,0 +1,21 @@
+*{
+    font-family: serif;
+    padding-left: 30px;
+    padding-top: 20px;
+
+}
+.btn{
+    margin-left: 55px ;
+    border-radius: 20px !important;
+    /* color: brown !important; */
+    background-color:brown !important;
+}
+.heading{
+    color: #212121;
+    /* font-size: 26px; */
+    font-family: AvenirLTPro-Medium;
+    outline-color: brown !important;
+}
+.para{
+    margin-left: 75px !important;
+}
