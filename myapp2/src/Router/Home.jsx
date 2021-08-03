@@ -1,5 +1,5 @@
 import React from "react";
-import { Carousel, Card, Button} from "react-bootstrap";
+import { Carousel, Card, Button, Row, Col} from "react-bootstrap";
 
 export const Home = () => {
   return (
@@ -49,7 +49,13 @@ export const Home = () => {
         </Carousel.Item>
       </Carousel>
       <br />
-      <Card>
+      <h2 style={{}}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, delectus.</h2>
+      <br/>
+      
+      <Row>
+      <Col md={1}></Col>
+        <Col md={3}>
+      <Card style={{backgroundColor:"yellow"}}>
   <Card.Header as="h5">Featured</Card.Header>
   <Card.Body>
     <Card.Title>Special title treatment</Card.Title>
@@ -59,8 +65,36 @@ export const Home = () => {
     <Button variant="outline-primary">Go somewhere</Button>
   </Card.Body>
 </Card>
+</Col>
+<Col md={3}>
+      <Card style={{backgroundColor:"yellow"}}>
+  <Card.Header as="h5">Featured</Card.Header>
+  <Card.Body>
+    <Card.Title>Special title treatment</Card.Title>
+    <Card.Text>
+      With supporting text below as a natural lead-in to additional content.
+    </Card.Text>
+    <Button variant="outline-primary">Go somewhere</Button>
+  </Card.Body>
+</Card>
+</Col>
+<Col md={3}>
+      <Card style={{backgroundColor:"yellow"}}>
+  <Card.Header as="h5">Featured</Card.Header>
+  <Card.Body>
+    <Card.Title>Special title treatment</Card.Title>
+    <Card.Text>
+      With supporting text below as a natural lead-in to additional content.
+    </Card.Text>
+    <Button variant="outline-primary">Go somewhere</Button>
+  </Card.Body>
+</Card>
+</Col>
+</Row>
 <br/>
-      <p style={{backgroundColor:"red" ,color:"white"}}>
+<div style={{backgroundColor:"red" ,color:"white"}}>
+  <img src="pp1.jpg" alt="" style={{float:"right"}}/>
+      <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. In eaque
         architecto tempora magnam, dolor unde assumenda maiores? Iure, nostrum
         accusamus. Rerum veritatis dolores delectus? Ipsam illo explicabo nihil
@@ -96,7 +130,8 @@ export const Home = () => {
         libero cum quas recusandae rem, vitae adipisci totam autem sed
         repellendus iste. Incidunt.
       </p>
-    </div>
+      </div>
+      </div>
   );
 };
 
