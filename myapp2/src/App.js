@@ -1,4 +1,5 @@
 import React from 'react';
+import Counter from '../../myapp/src/Components/Counter';
 // import Zaid from './IDCADS/Zaid'
 // import Aboutus from './Router/Aboutus';
 // import Contactus from './Router/Contactus';
@@ -17,8 +18,10 @@ import React from 'react';
 // import Home from './Router/Home';
 // import Services from './Router/Services';
 // import {BrowserRouter as Router ,Switch,Route} from 'react-router-dom'
-import LoginForm from './IDCADS/LoginForm';
-import Routerer from './Routerer';
+// import LoginForm from './IDCADS/LoginForm';
+// import Routerer from './Routerer';
+// import Parent from './IDCADS/Parent';
+
 
 
 function App() {
@@ -32,10 +35,13 @@ function App() {
 <Col md={4}><Card><h1>High</h1><Piano/></Card></Col></Row>
 <br/> */}
 {/* <Zaid/> */}
+{/* <Parent/> */}
 {/* <LoginForm/>  */}
-<Routerer/>
+{/* <Routerer/> */}
 {/* <AudioPlayer/> */}
+<Counter />
 {/* <Router>
+
 <Navigationbar/>
 <Switch>
 <div>
