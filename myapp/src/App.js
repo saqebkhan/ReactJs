@@ -26,18 +26,20 @@
 ///////////////////////for Counter ////////////////////
 
 import './App.css';
-import  { CarouselParent } from './Components/CarouselParent';
-import { NavBar} from './Components/NavBar'
-import { Cards } from  './Components/Cards'
+import Counter from './Components/Counter';
+// import  { CarouselParent } from './Components/CarouselParent';
+// import { NavBar} from './Components/NavBar'
+// import { Cards } from  './Components/Cards'
 function App () {
     return(
         <div>
             
-            <NavBar/>
+            {/* <NavBar/>
             <CarouselParent/>
             <Cards/>
 
-            
+             */}
+             <Counter />
         </div>
     );
 };
