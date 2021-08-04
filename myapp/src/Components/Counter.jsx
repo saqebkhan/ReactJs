@@ -3,6 +3,7 @@ import { Button } from 'react-bootstrap';
 
  export const Counter = () => {
   const [cntr, setCntr] = useState(0);
+  const [name, setName] = useState(" ");
   return (
     <div>
         
@@ -28,6 +29,8 @@ import { Button } from 'react-bootstrap';
           </td>
         </tr>
       </table>
+      <h1>{name ="saqeb"}</h1>
+      <Button onClick={setName}>Nam</Button>
       
     </div>
   );
