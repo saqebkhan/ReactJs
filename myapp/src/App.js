@@ -25,11 +25,15 @@
 // export default App;
 ///////////////////////for Counter ////////////////////
 
+// import Meaning from './Dictionary/Meaning';
+import Dictionary from './Dictionary/Dictionary';
 import './App.css';
-import Counter from './Components/Counter';
+// import Counter from './Components/Counter';
 // import  { CarouselParent } from './Components/CarouselParent';
 // import { NavBar} from './Components/NavBar'
 // import { Cards } from  './Components/Cards'
+
+
 function App () {
     return(
         <div>
@@ -37,9 +41,10 @@ function App () {
             {/* <NavBar/>
             <CarouselParent/>
             <Cards/>
-
              */}
-             <Counter />
+             <Dictionary/>
+             {/* <Meaning /> */}
+             {/* <Counter /> */}
         </div>
     );
 };
