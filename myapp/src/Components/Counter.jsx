@@ -1,37 +1,44 @@
 import React, { useState } from "react";
-import { Button } from 'react-bootstrap';
+import { Button, Row, Col } from "react-bootstrap";
+import { axios } from "axios";
 
- export const Counter = () => {
+export const Counter = () => {
   const [cntr, setCntr] = useState(0);
-  const [name, setName] = useState(" ");
+  const handleapi = () => {
+    axios.get("http://localhost:6000/").then((res) => {
+      console.log(res);
+    });
+  };
   return (
     <div>
-        
-      <table>
-        <tr>
-          <td>
-            <Button
-              variant={cntr >= 2 ? "success" : "danger"}
-              disabled={!cntr > 0}
-              onClick={() => setCntr(cntr - 1)}>
-                  -
-                  </Button>
-           
-          </td>
+      <Row>
+        <Col>
+          <Button
+            variant={cntr >= 2 ? "success" : "danger"}
+            disabled={!cntr > 0}
+            onClick={() => setCntr(cntr - 1)}
+          >
+            -
+          </Button>
+        </Col>
+        <Col>
           <h1>{cntr}</h1>
-          <td>
-            <Button
-              variant={cntr <=1 ? "success" : "success " }
-              onClick={() => setCntr(cntr + 1)}
-              disabled={cntr > 9}>
-               +
-            </Button>
-          </td>
-        </tr>
-      </table>
-      <h1>{name ="saqeb"}</h1>
-      <Button onClick={setName}>Nam</Button>
-      
+        </Col>
+        <Col>
+          <Button
+            variant={cntr <= 1 ? "success" : "success "}
+            onClick={() => setCntr(cntr + 1)}
+            disabled={cntr > 9}
+          >
+            +
+          </Button>
+        </Col>
+        <Row>
+          <Col>
+            <Button onClick={handleapi}>Call My Api</Button>
+          </Col>
+        </Row>
+      </Row>
     </div>
   );
 };
