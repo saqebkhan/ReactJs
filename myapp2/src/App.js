@@ -1,5 +1,7 @@
 import React from 'react';
-import Counter from '../../myapp/src/Components/Counter';
+// import Clock from './IDCADS/Clock.jsx'
+
+// import Counter from '../../myapp/src/Components/Counter';
 // import Zaid from './IDCADS/Zaid'
 // import Aboutus from './Router/Aboutus';
 // import Contactus from './Router/Contactus';
@@ -19,8 +21,10 @@ import Counter from '../../myapp/src/Components/Counter';
 // import Services from './Router/Services';
 // import {BrowserRouter as Router ,Switch,Route} from 'react-router-dom'
 // import LoginForm from './IDCADS/LoginForm';
-// import Routerer from './Routerer';
+import Routerer from './Routerer';
 // import Parent from './IDCADS/Parent';
+// import Dictionary from './Dictionary/Dictionary';
+// import Meaning from "./Dictionary/Meaning";
 
 
 
@@ -37,9 +41,13 @@ function App() {
 {/* <Zaid/> */}
 {/* <Parent/> */}
 {/* <LoginForm/>  */}
-{/* <Routerer/> */}
+<Routerer/>
 {/* <AudioPlayer/> */}
-<Counter />
+{/* <Counter /> */}
+{/* <Dictionary />
+<Meaning/> */}
+
+{/* <Clock/> */}
 {/* <Router>
 
 <Navigationbar/>
