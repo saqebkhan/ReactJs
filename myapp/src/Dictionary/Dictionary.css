@@ -1,0 +1,32 @@
+.dictionary{
+    background-color: rgb(30, 255, 0) !important;
+    margin: 10px;
+    padding: 10px;
+
+}
+.LeftContent{
+    background-color: green !important;
+    padding: 10px;
+    margin: 12px;
+}
+
+.RightContent{
+    background-color: teal !important;
+
+}
+
+.RightContent input{
+    background-color: tomato;
+    color: rgb(255, 255, 255);
+    padding: 10px;
+    margin: 12px;
+}
+.pronounciation{
+    padding: 10px;
+    margin: 12px;
+    background-color: yellowgreen;
+}
+.cards{
+    padding: 12px;
+    margin: 12px;
+}
