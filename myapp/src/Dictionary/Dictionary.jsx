@@ -17,8 +17,16 @@ const Dictionary = () => {
       .then((res) => {
         console.log(res.data);
         setResData([...res.data]);
-      });
+      })
   };
+  
+  const handleKeyPress = e => {
+    //it triggers by pressing the enter key
+  if (e.keyCode == 13) {
+    hanlesearch();
+  }
+};
+  
   return (
     <div>
       <Card className={"dictionary"}>
@@ -30,10 +38,11 @@ const Dictionary = () => {
               hanlesearch={hanlesearch}
               resData={resData}
               setWordSearch={setWordSearch}
+              handleKeyPress={handleKeyPress}
             />
             {resData.map(
-              (falan) =>
-                falan.meanings.length > 0 && <MeaningList falan={falan} />
+              (item) =>
+                item.meanings.length > 0 && <MeaningList item={item} />
             )}
 
             {/* <MeaningList />
