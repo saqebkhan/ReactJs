@@ -1,12 +1,12 @@
 import React from "react";
 import { Card, Form, Row, Col, Button } from "react-bootstrap";
-import MeaningList from "./MeaningList";
+import Meaning from "./Meaning";
 // import Meaning from './Meaning'
 
-export const LeftContent = ({ hanlesearch,setWordSearch }) => {
+export const LeftContent = ({ hanlesearch,setWordSearch,handleKeyPress }) => {
   return (
     <div>
-      <Card className="pronounciation">
+      <Card className="pronounciation"> 
         <Row>
           <Col md={10}>
             <Form.Control
@@ -18,13 +18,12 @@ export const LeftContent = ({ hanlesearch,setWordSearch }) => {
             <Button>Play</Button>
           </Col>
           <Col md={2}>
-            <Button onClick={hanlesearch}>Search</Button>
+            <Button onClick={hanlesearch} onKeyPress={handleKeyPress}>Search</Button>
           </Col>
         </Row>
 
         <span>Pronoun</span>
-        {/* <Meaning />
-          <Meaning /> */}
+        
       </Card>
     </div>
   );
