@@ -18,7 +18,7 @@ export const Meaning = ({ m }) => {
             </p>
           ))}
         </i>
-        <span>This is Meaning Two here</span>
+        {/* <span>This is Meaning Two here</span> */}
       </Card>
     </div>
   );
