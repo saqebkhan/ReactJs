@@ -11,22 +11,19 @@ const Dictionary = () => {
   const [resData, setResData] = useState([]);
   const [wordSearch, setWordSearch] = useState(" ");
 
-  const hanlesearch = () => {
+  const handlesearch = (e) => {
+    if(e.code === "Enter" || e.type === "click") {
     axios
       .get(`https://api.dictionaryapi.dev/api/v2/entries/en_US/${wordSearch}`)
       .then((res) => {
         console.log(res.data);
         setResData([...res.data]);
-      })
+      });
+    }
   };
-  
-  const handleKeyPress = e => {
-    //it triggers by pressing the enter key
-  if (e.keyCode == 13) {
-    hanlesearch();
-  }
-};
-  
+
+
+
   return (
     <div>
       <Card className={"dictionary"}>
@@ -35,14 +32,12 @@ const Dictionary = () => {
           <Col md={6}>
             {/* <MeaningList wordSearch={WordSearch}/> */}
             <LeftContent
-              hanlesearch={hanlesearch}
+              handlesearch={handlesearch}
               resData={resData}
               setWordSearch={setWordSearch}
-              handleKeyPress={handleKeyPress}
             />
             {resData.map(
-              (item) =>
-                item.meanings.length > 0 && <MeaningList item={item} />
+              (item) => item.meanings.length > 0 && <MeaningList item={item} />
             )}
 
             {/* <MeaningList />
