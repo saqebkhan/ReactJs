@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useMemo } from "react";
 import { Card, Col, Row, Button, Form } from "react-bootstrap";
 import "./EMIcalculator.css";
 
@@ -6,13 +6,19 @@ const EMIcalculator = () => {
   const [p, setP] = useState("");
   const [n, setN] = useState("");
   const [r, setR] = useState("");
-  const [emi, setEMI] = useState("");
+  // const [emi, setEMI] = useState("");
   const handleCalEMI = () => {
     const si = (p * n * r) / 100;
     const repayAmount = Number(p) + Number(si);
     const emiLocal = Math.floor(repayAmount / (n * 12));
-    setEMI(emiLocal);
+    return emiLocal;
   };
+const emi = useMemo(()=>handleCalEMI(),[p,n,r])
+  //component did updte / component will update ---Class Compnent
+  // useEffect(()=>{
+  //   handleCalEMI();
+
+  // },[p,n,r])
 
   return (
     <div>
