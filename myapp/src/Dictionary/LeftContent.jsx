@@ -1,12 +1,15 @@
-import React from "react";
+import React, { useRef } from "react";
+import { useEffect } from "react";
 import { Card, Form, Row, Col, Button } from "react-bootstrap";
 import Meaning from "./Meaning";
+import Pronounciation, { Pronunciation } from "./pronounciation/Pronunciation";
 // import Meaning from './Meaning'
 
-export const LeftContent = ({
-  handlesearch,
-  setWordSearch,
-}) => {
+export const LeftContent = ({ handlesearch, setWordSearch, resData }) => {
+  const eleSearch = useRef();
+  useEffect(()=>{
+  eleSearch.current.focus();
+})
   return (
     <div>
       <Card className="pronounciation">
@@ -17,16 +20,16 @@ export const LeftContent = ({
               placeholder="Search here"
               onChange={(e) => setWordSearch(e.target.value)}
               onKeyPress={handlesearch}
+              ref={eleSearch}
             ></Form.Control>
-            <span>Pronouncination</span>
-            <Button>Play</Button>
+            {resData.length > 0 && (
+              <Pronunciation pData={resData[0].phonetics[0]} />
+            )}
           </Col>
           <Col md={2}>
             <Button onClick={handlesearch}>Search</Button>
           </Col>
         </Row>
-
-        <span>Pronoun</span>
       </Card>
     </div>
   );
