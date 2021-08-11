@@ -1,0 +1,58 @@
+nav{
+    background-color: rgb(118, 131, 131);
+    padding: 18px;
+    text-align: center;
+    position: fixed; 
+    width: 98%;
+
+    
+
+}
+a{
+    text-decoration: none !important;
+    color: rgb(255, 255, 255);
+    padding: 20px;
+    font-size: larger;
+    text-align: center;
+}
+button{
+    margin-left: 12px;
+    float: right;
+    padding: 5px;
+    margin-top: 20px;
+
+}
+input{
+    width: 300px;
+    text-align: center;
+    float: right;
+    padding: 5px;
+    margin-top: 20px;
+}
+a:hover{
+    /* color:rgb(107, 101, 101);
+    background-color: rgb(255, 255, 255); */
+    border-radius: 20px;
+    box-shadow: 0 0 10px;
+}
+.dropdown1 a{
+    display: block;
+
+}
+.dropdown1{
+    display: inline-block;
+}
+.droplist{
+    position: absolute;
+    padding: 5px;
+    width: 180px;
+    display: none;
+    border-radius: 20px;
+
+}
+.dropdown1:hover .droplist{
+    display: block;
+    text-align: center;
+    background-color: rgb(112, 112, 112);
+    border-radius: 20px;
+}
