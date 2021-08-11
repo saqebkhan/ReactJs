@@ -1,4 +1,5 @@
 import React from 'react';
+import {Form} from "react-bootstrap"
 // import Clock from './IDCADS/Clock.jsx'
 
 // import Counter from '../../myapp/src/Components/Counter';
@@ -7,7 +8,7 @@ import React from 'react';
 // import Contactus from './Router/Contactus';
 // import HeaderComponent from './Component/A_HeaderSection/HeaderComponent';
 // import BodySection from './Component/B_BodySection/BodySection';
-// import EMIcalculator from './EMIcalculator';
+import EMIcalculator from './EMIcalculator';
 // import Piano from './Piano';
 // import {Row,Col, Card} from 'react-bootstrap'
 // import AudioPlayer from './AudioPlayer';
@@ -21,7 +22,7 @@ import React from 'react';
 // import Services from './Router/Services';
 // import {BrowserRouter as Router ,Switch,Route} from 'react-router-dom'
 // import LoginForm from './IDCADS/LoginForm';
-import Routerer from './Routerer';
+// import Routerer from './Routerer';
 // import Parent from './IDCADS/Parent';
 // import Dictionary from './Dictionary/Dictionary';
 // import Meaning from "./Dictionary/Meaning";
@@ -33,19 +34,20 @@ function App() {
 <div className="App">
 {/* <HeaderComponent/> 
 <BodySection/> */}
-{/* <EMIcalculator/>
-<Row><Col md={4}><Card><h1>Low</h1><Piano/></Card></Col>
+
+<EMIcalculator/>
+{/* <Row><Col md={4}><Card><h1>Low</h1><Piano/></Card></Col>
 <Col md={4}><Card><h1>Medium</h1><Piano/></Card></Col>
 <Col md={4}><Card><h1>High</h1><Piano/></Card></Col></Row>
 <br/> */}
 {/* <Zaid/> */}
 {/* <Parent/> */}
 {/* <LoginForm/>  */}
-<Routerer/>
+{/* <Routerer/> */}
 {/* <AudioPlayer/> */}
 {/* <Counter /> */}
-{/* <Dictionary />
-<Meaning/> */}
+{/* <Dictionary /> */}
+{/*<Meaning/> */}
 
 {/* <Clock/> */}
 {/* <Router>
