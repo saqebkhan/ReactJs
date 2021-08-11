@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import { useEffect,useRef } from "react";
 import { React, useState } from "react";
 import { Button, Card, Form, Row, Col } from "react-bootstrap";
 import { userData } from "../config";
@@ -9,6 +9,10 @@ const LoginForm = () => {
   const [password, setPassword] = useState("");
   const [isvalid, setIsvalid] = useState(true);
   const [isSuccess, setIsSuccess] = useState(false);
+
+  const eleUserName = useRef();
+  const elePassword = useRef();
+
 
   useEffect(() => {
     if (username.length >= 5 && password.length >= 6) {
@@ -21,7 +25,16 @@ const LoginForm = () => {
         localStorage.setItem('password',userData.password)
       }
     } else setIsvalid(true);
+
   }, [username, password]);
+  useEffect(()=>{
+    if(localStorage.getItem('userName')){
+      eleUserName.current.value=localStorage.getItem("userName")
+      elePassword.current.focus();
+    } else{
+      eleUserName.current.focus();
+    }
+  })
   return (
     <div>
       {isSuccess ? (
@@ -35,6 +48,7 @@ const LoginForm = () => {
                   type="text"
                   onChange={(e) => setusername(e.target.value)}
                   placeholder="User Name"
+                  ref={eleUserName}
                 ></Form.Control>
               </Col>
               <Col lg={12}>
@@ -42,6 +56,7 @@ const LoginForm = () => {
                   type="password"
                   onChange={(e) => setPassword(e.target.value)}
                   placeholder="Password"
+                  ref={elePassword}
                 ></Form.Control>
               </Col>
             </Row>
