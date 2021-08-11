@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+import Piano from "./Piano"
 import { Button, Row, Col, Card } from "react-bootstrap";
 import "./Piano.css";
 
@@ -17,9 +18,11 @@ export const AudioPlayer = () => {
     if (e.key === "f" && handleAudioPlay("E"));
     if (e.key === "g" && handleAudioPlay("F"));
     if (e.key === "h" && handleAudioPlay("G"));
-  }); 
- 
+  });
+
   return (
+    <React.Fragment>
+    <Piano/>
     <Card className="player">
       <Row>
         <Col></Col>
@@ -44,6 +47,7 @@ export const AudioPlayer = () => {
         </Col>
       </Row>
     </Card>
+    </React.Fragment>
   );
 };
 
