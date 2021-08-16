@@ -26,30 +26,30 @@
 ///////////////////////for Counter ////////////////////
 
 // import Meaning from './Dictionary/Meaning';
-import Dictionary from './Dictionary/Dictionary';
-import './App.css';
+// import Dictionary from './Dictionary/Dictionary';
+// import './App.css';
 // import Counter from './Components/Counter';
 // import  { CarouselParent } from './Components/CarouselParent';
 // import { NavBar} from './Components/NavBar'
 // import { Cards } from  './Components/Cards'
 
 
-function App () {
-    return(
-        <div>
+// function App () {
+//     return(
+        // <div>
             
-            {/* <NavBar/>
-            <CarouselParent/>
-            <Cards/>
-             */}
-             <Dictionary/>
-             {/* <Meaning /> */}
-             {/* <Counter /> */}
-        </div>
-    );
-};
+            //* <NavBar/>
+            //<CarouselParent/>
+            //<Cards/>
+             
+             //* <Dictionary/> */
+             //* <Meaning /> */
+             //* <Counter /> */
+        //* </div> */
+//     );
+// };
 
-export default App; 
+// export default App; 
 ///////////////////////////////////////////////////////////////////////////
 // import React from 'react';
 // import './App.css';
@@ -70,14 +70,14 @@ export default App;
 // }
             
 // export default App;
-//////////////////////////////////////////////////
-// import React from 'react';
-// import './App.css';
-// import {GridLayout} from "./Components/GridLayout";
+////////////////////////////////////////////////
+import React from 'react';
+import './App.css';
+import {GridLayout} from "./Components/GridLayout";
 
-// function App () {
-//     return (
-//         <GridLayout/>
-//     );
-// };
-// export default App;
+function App () {
+    return (
+        <GridLayout/>
+    );
+};
+export default App;
