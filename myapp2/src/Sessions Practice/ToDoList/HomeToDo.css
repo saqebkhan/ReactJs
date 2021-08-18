@@ -1,0 +1,30 @@
+.card1{
+    /* background-color:orange !important; */
+    /* background-image: "https://img.freepik.com/free-vector/yellow-background-with-dynamic-abstract-shapes_1393-144.jpg?size=626&ext=jpg" !important; */
+    margin: 12px;
+    padding: 12px;
+    background-image: url(https://img.freepik.com/free-vector/yellow-background-with-dynamic-abstract-shapes_1393-144.jpg?size=626&ext=jpg);
+}
+.cardtdl{
+    background-color:navy    !important;
+    color: white;
+    padding: 6px;
+
+}
+.cardatd{
+    background-color:navy !important;
+    color: white;
+    padding: 8px;
+}
+.cardtdi{
+    color: black;
+    background-color: rgb(255, 196, 86) !important;
+    margin: 4px;
+    padding: 4px;
+}
+.imgtdl{
+    width: 516px !important;
+}
+.imgtdi{
+    width: 515px !important;
+}
