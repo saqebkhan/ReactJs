@@ -1,19 +1,22 @@
 import React from 'react';
-import {Form} from "react-bootstrap"
+import { HomeToDo } from './Sessions Practice/ToDoList/HomeToDo';
+// import {Page} from "./Practice/Page";
+// import EmpDetails from './Redux/EmpDetails';
+// import {Form} from "react-bootstrap"
 // import Clock from './IDCADS/Clock.jsx'
-
+// import FetchingdataFromRedux from './Redux/FetchingdataFromRedux';
+// import EmployeeList from "./Sessions Practice/EmployeeList"
 // import Counter from '../../myapp/src/Components/Counter';
 // import Zaid from './IDCADS/Zaid'
 // import Aboutus from './Router/Aboutus';
 // import Contactus from './Router/Contactus';
 // import HeaderComponent from './Component/A_HeaderSection/HeaderComponent';
 // import BodySection from './Component/B_BodySection/BodySection';
-import EMIcalculator from './EMIcalculator';
+// import EMIcalculator from './EMIcalculator';
 // import Piano from './Piano';
 // import {Row,Col, Card} from 'react-bootstrap'
 // import AudioPlayer from './AudioPlayer';
 // import {Idcard} from './Idcard'
-// import { EmployeeList} from './IDCADS/EmployeeList' 
 // import {Practice} from './IDCADS/Practice'
 // import SectionArticle from './Component/SectionArticle'
 // import Navigationbar from './Router/Navigationbar'
@@ -34,8 +37,10 @@ function App() {
 <div className="App">
 {/* <HeaderComponent/> 
 <BodySection/> */}
-
-<EMIcalculator/>
+<HomeToDo />
+{/* <EmpDetails/> */}
+{/* <FetchingdataFromRedux/> */}
+{/* <EMIcalculator/> */}
 {/* <Row><Col md={4}><Card><h1>Low</h1><Piano/></Card></Col>
 <Col md={4}><Card><h1>Medium</h1><Piano/></Card></Col>
 <Col md={4}><Card><h1>High</h1><Piano/></Card></Col></Row>
@@ -77,7 +82,7 @@ function App() {
 
 {/* <Idcard/> */}
 {/* <EmployeeList/> */}
-{/* <Practice/> */}
+{/* <Page/> */}
 {/* <SectionArticle/> */}
 
 </div> 
@@ -85,4 +90,6 @@ function App() {
 };
 export default App; 
 
+
+   
 
