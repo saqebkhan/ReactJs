@@ -1,4 +1,4 @@
-import { React, useEffect, useState } from "react";
+import { React, useState } from "react";
 import { Card, Row, Col, Form, Image } from "react-bootstrap";
 
 export const ToDoItem = ({ item, todoitems }) => {
@@ -8,7 +8,7 @@ export const ToDoItem = ({ item, todoitems }) => {
   //     item = check;
   //   });
   // };
-  
+
   return (
     <div>
       <Image className="imgtdi" />

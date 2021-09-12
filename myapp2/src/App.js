@@ -17,13 +17,13 @@ import React from 'react';
 // import AudioPlayer from './AudioPlayer';
 // import {Idcard} from './Idcard'
 // import Practice from './Sessions Practice/mini Counter/Practice';
-import SectionArticle from './Sessions Practice/SectionArticle';
+// import SectionArticle from './Sessions Practice/SectionArticle';
 // import Navigationbar from './Router/Navigationbar'
 // import Products from './Router/Products';
 // import Home from './Router/Home';
 // import Services from './Router/Services';
 // import {BrowserRouter as Router ,Switch,Route} from 'react-router-dom'
-// import LoginForm from './Sessions Practice/Login Authentication/LoginForm';
+import LoginForm from './Sessions Practice/Login Authentication/LoginForm';
 // import Routerer from './Routerer';
 // import Parent from './IDCADS/Parent';
 // import Dictionary from './Dictionary/Dictionary';
@@ -45,7 +45,7 @@ function App() {
 <Col md={4}><Card><h1>High</h1><Piano/></Card></Col></Row>
 <br/> */}
 {/* <Parent/> */}
-{/* <LoginForm/>  */}
+<LoginForm/> 
 {/* <Routerer/> */}
 {/* <AudioPlayer/> */}
 {/* <Counter /> */}
@@ -82,7 +82,7 @@ function App() {
 {/* <Idcard/> */}
 {/* <EmployeeList /> */}
 {/* <Page/> */}
-<SectionArticle/>
+{/* <SectionArticle/> */}
 
 </div> 
   );
