@@ -8,6 +8,7 @@ import MeaningList from "./MeaningList";
 import axios from "axios";
 import Synonyms from "./Synnonyms/Synonyms";
 
+
 const Dictionary = () => {
   const [resData, setResData] = useState([]);
   const [wordSearch, setWordSearch] = useState(" ");

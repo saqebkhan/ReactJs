@@ -1,0 +1,21 @@
+/* .wip{
+    background-color: orange;
+    color: navy;
+    height: 100px;
+}
+.done{
+    background-color: greenyellow;
+    color: navy;
+} */
+.open{
+    color: black;
+    background-color: rgb(253, 55, 55);
+}
+.wip{
+    color: black;
+    background-color: orange;
+}
+.done{
+    color: black;
+    background-color: greenyellow;
+}

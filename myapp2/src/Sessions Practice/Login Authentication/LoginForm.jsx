@@ -1,7 +1,7 @@
 import { useEffect,useRef } from "react";
 import { React, useState } from "react";
 import { Button, Card, Form, Row, Col } from "react-bootstrap";
-import { userData } from "../config";
+import { userData } from "./config";
 import "./LoginForm.css";
 
 const LoginForm = () => {
@@ -10,9 +10,8 @@ const LoginForm = () => {
   const [isvalid, setIsvalid] = useState(true);
   const [isSuccess, setIsSuccess] = useState(false);
 
-  const eleUserName = useRef();
-  const elePassword = useRef();
-
+  // const eleUserName = useRef();
+  // const elePassword = useRef();
 
   useEffect(() => {
     if (username.length >= 5 && password.length >= 6) {
@@ -27,18 +26,21 @@ const LoginForm = () => {
     } else setIsvalid(true);
 
   }, [username, password]);
-  useEffect(()=>{
-    if(localStorage.getItem('userName')){
-      eleUserName.current.value=localStorage.getItem("userName")
-      elePassword.current.focus();
-    } else{
-      eleUserName.current.focus();
-    }
-  })
+  // useEffect(()=>{
+  //   if(localStorage.getItem('userName')){
+  //     eleUserName.current.value=localStorage.getItem("userName")
+  //     elePassword.current.focus();
+  //   } else{
+  //     eleUserName.current.focus();
+  //   }
+  // })
   return (
     <div>
       {isSuccess ? (
+        <div>
         <h1>Congratulations!!! You Have Successfully Logged In,</h1>
+        <p>there are your private data</p>
+        </div>
       ) : (
         <div>
           <Card className="login">
@@ -48,7 +50,7 @@ const LoginForm = () => {
                   type="text"
                   onChange={(e) => setusername(e.target.value)}
                   placeholder="User Name"
-                  ref={eleUserName}
+                  // ref={eleUserName}
                 ></Form.Control>
               </Col>
               <Col lg={12}>
@@ -56,7 +58,7 @@ const LoginForm = () => {
                   type="password"
                   onChange={(e) => setPassword(e.target.value)}
                   placeholder="Password"
-                  ref={elePassword}
+                  // ref={elePassword}
                 ></Form.Control>
               </Col>
             </Row>

@@ -4,5 +4,5 @@ export const AddEmp=(name ,desc ,img)=>({
         name,
         desc,
         img,
-    }
-})
+    },
+});

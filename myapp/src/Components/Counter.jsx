@@ -28,7 +28,7 @@ export const Counter = () => {
           <Button
             variant={cntr <= 1 ? "success" : "success "}
             onClick={() => setCntr(cntr + 1)}
-            disabled={cntr > 9}
+            disabled={cntr >= 10}
           >
             +
           </Button>

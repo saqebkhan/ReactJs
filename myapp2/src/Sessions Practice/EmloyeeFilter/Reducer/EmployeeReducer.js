@@ -1,7 +1,7 @@
 export const EmployeeReducer = {
     Data:[
         {
-            
+        
             Name:"mohd. Arbaz",
             Class: "8th",
              City : "Mumbai",

@@ -21,8 +21,8 @@ export const AddToDo = ({ handleAdd }) => {
           </Col>
           <Col md={3}>
             <Button
-              variant="outline-success"
-              style={{ backgroundColor: "", color: "white" }}
+              variant="success"
+              
               onClick={() => {
                 setNewTodo("");
                 handleAdd(newTodo);

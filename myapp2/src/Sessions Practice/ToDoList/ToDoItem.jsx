@@ -7,7 +7,7 @@ export const ToDoItem = ({ item, todoitems }) => {
   //   todoitems.forEach((item) => {
   //     item = check;
   //   });
-  // }
+  // };
   
   return (
     <div>
