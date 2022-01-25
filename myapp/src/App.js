@@ -1,15 +1,16 @@
+// import React from "react";
 // import "./App.css";
 // // import { Cources } from "./components/Cources";
-// import {NewComp} from "./NewComp";
+// import { NewComp } from "./NewComp";
 
 // function App() {
-//     return(
-//         <NewComp />
-//    <Cources />
-//     )
+//   return (
+//     <div>
+//       <NewComp />
+//       <Cources />
+//     </div>
+//   );
 // }
-
-
 
 // export default App;
 //////////////////////FOR TABLE USES OF COURSES/////////////////////////
@@ -18,40 +19,41 @@
 
 // import Counter  from "./Components/Counter";
 // import DND from "./Components/DND/DND";
-// import Dictionary from 
+// import Dictionary from
 // import 'bootstrap/dist/css/bootstrap.min.css';
 
 // function App() {
-    // return (
-        // <Counter/>
-        // <Dictionary/>
-        // <DND/>
+// return (
+// <Counter/>
+// <Dictionary/>
+// <DND/>
 //     );
 // };
 // export default App;
 ///////////////////////for Counter ////////////////////
 
-
-import Dictionary from './Dictionary/Dictionary';
-import './App.css';
+// import Dictionary from "./Dictionary/Dictionary";
+// import "./App.css";
+// import { Interview } from "./Components/Interview";
+import { Todo } from "./Components/todo/Todo";
 // import Counter from './Components/Counter';
 // import  { CarouselParent } from './Components/CarouselParent';
 // import { NavBar} from './Components/NavBar'
 // import { Cards } from  './Components/Cards'
 
- function App () {
-    return(
-<div>
+function App() {
+  return (
+    <div>
+      {/* * <NavBar/> */}
+      {/* <CarouselParent/> */}
+      {/* <Cards/> */}
 
-{/* * <NavBar/> */}
-{/* <CarouselParent/> */}
-{/* <Cards/> */}
-
-<Dictionary/> 
-{/* * <Counter />  */}
-</div> 
-    );
-};
+      {/* <Dictionary /> */}
+      <Todo />
+      {/* * <Counter />  */}
+    </div>
+  );
+}
 
 export default App;
 ///////////////////////////////////////////////////////////////////////////
@@ -61,11 +63,11 @@ export default App;
 // import { NewComp } from "./NewComp";
 
 // function App() {
-  // return (
-    // <RowCol />
+// return (
+// <RowCol />
 
-    // <NewComp/>
-  // );
+// <NewComp/>
+// );
 // }
 
 // export default App;
