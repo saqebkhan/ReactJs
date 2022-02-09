@@ -5,7 +5,7 @@ import React from 'react';
 // import {Form} from "react-bootstrap"
 // import Clock from './Sessions Practice/my Stop watch/Clock';
 // import FetchingdataFromRedux from './Redux/FetchingdataFromRedux';
-// import EmployeeList from './Sessions Practice/EmloyeeFilter/EmployeeList';
+import EmployeeList from './Sessions Practice/EmloyeeFilter/EmployeeList';
 // import Counter from '../../myapp/src/Components/Counter';
 // import Aboutus from './Router/Aboutus';
 // import Contactus from './Router/Contactus';
@@ -23,7 +23,7 @@ import React from 'react';
 // import Home from './Router/Home';
 // import Services from './Router/Services';
 // import {BrowserRouter as Router ,Switch,Route} from 'react-router-dom'
-import LoginForm from './Sessions Practice/Login Authentication/LoginForm';
+// import LoginForm from './Sessions Practice/Login Authentication/LoginForm';
 // import Routerer from './Routerer';
 // import Parent from './IDCADS/Parent';
 // import Dictionary from './Dictionary/Dictionary';
@@ -45,7 +45,7 @@ function App() {
 <Col md={4}><Card><h1>High</h1><Piano/></Card></Col></Row>
 <br/> */}
 {/* <Parent/> */}
-<LoginForm/> 
+{/* <LoginForm/>  */}
 {/* <Routerer/> */}
 {/* <AudioPlayer/> */}
 {/* <Counter /> */}
@@ -80,7 +80,7 @@ function App() {
 </Router> */}
 
 {/* <Idcard/> */}
-{/* <EmployeeList /> */}
+<EmployeeList />
 {/* <Page/> */}
 {/* <SectionArticle/> */}
 

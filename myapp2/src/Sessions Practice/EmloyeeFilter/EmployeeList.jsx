@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import { Card, Col, Row, Form } from "react-bootstrap";
-import { useHistory } from "react-router";
 import "./Employee.css";
 import { EmployeeItem } from "./EmployeItem";
 import { EmployeeReducer } from "./Reducer/EmployeeReducer";
@@ -9,7 +8,6 @@ import { EmployeeReducer } from "./Reducer/EmployeeReducer";
 export const EmployeeList = () => {
   const [empArr, setEmpArr] = useState(EmployeeReducer.Data);
   const [searchText, setSearchText] = useState(" ");
-  const history = useHistory;
   
   useEffect(() => {
     const filterArr = empArr.filter(
@@ -19,7 +17,7 @@ export const EmployeeList = () => {
     );
     if (searchText === "") setEmpArr(EmployeeReducer.Data);
     else setEmpArr(filterArr);
-  }, [searchText],);
+  }, [searchText,empArr]);
 
   return (
     <Card className="employeelist">
