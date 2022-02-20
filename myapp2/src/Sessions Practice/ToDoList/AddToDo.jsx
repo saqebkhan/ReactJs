@@ -27,7 +27,7 @@ export const AddToDo = ({ handleAdd }) => {
                 setNewTodo("");
                 handleAdd(newTodo);
               }}
-              disabled={newTodo === ""}
+              disabled={newTodo.trim() === ""}
             >
               Add Task
             </Button>

@@ -1,11 +1,11 @@
 import React from 'react';
-// import { HomeToDo } from './Sessions Practice/ToDoList/HomeToDo';
+import { HomeToDo } from './Sessions Practice/ToDoList/HomeToDo';
 // import {Page} from "./Practice/Page";
 // import EmpDetails from './Redux/EmpDetails';
 // import {Form} from "react-bootstrap"
 // import Clock from './Sessions Practice/my Stop watch/Clock';
 // import FetchingdataFromRedux from './Redux/FetchingdataFromRedux';
-import EmployeeList from './Sessions Practice/EmloyeeFilter/EmployeeList';
+// import EmployeeList from './Sessions Practice/EmloyeeFilter/EmployeeList';
 // import Counter from '../../myapp/src/Components/Counter';
 // import Aboutus from './Router/Aboutus';
 // import Contactus from './Router/Contactus';
@@ -36,7 +36,7 @@ function App() {
 <div className="App">
 {/* <HeaderComponent/> 
 <BodySection/> */}
-{/* <HomeToDo /> */}
+<HomeToDo />
 {/* <EmpDetails/> */}
 {/* <FetchingdataFromRedux/> */}
 {/* <EMIcalculator/> */}
@@ -80,7 +80,7 @@ function App() {
 </Router> */}
 
 {/* <Idcard/> */}
-<EmployeeList />
+{/* <EmployeeList /> */}
 {/* <Page/> */}
 {/* <SectionArticle/> */}
 
