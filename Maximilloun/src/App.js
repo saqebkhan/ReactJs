@@ -1,5 +1,6 @@
 import "./App.css";
 import Expenses from "./components/Expenses/Expenses";
+import NewExpense from "./components/NewExpense/NewExpense";
 
 function App() {
   const expenses = [
@@ -28,11 +29,16 @@ function App() {
       expenseAmount: 200,
     },
   ];
+  const newExpenseForm = (formExpenseData) => {
+   expenses.push(formExpenseData);
+  }
   return (
     <div>
+      <NewExpense onNewExpenseForm={newExpenseForm} />
       <Expenses items={expenses} />
     </div>
   );
 }
 
 export default App;
+

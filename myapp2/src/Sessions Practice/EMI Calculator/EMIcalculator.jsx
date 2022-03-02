@@ -1,75 +1,79 @@
-import React, { useState, useMemo } from "react";
-import { Card, Col, Row, Button, Form } from "react-bootstrap";
+import React, { useState } from "react";
 import "./EMIcalculator.css";
+import EMIHistory from "./EMIHistory";
+import EMIinputs from "./EMIinputs";
+import EMITable from "./EMITable";
 
-const EMIcalculator = () => {
+const EMIcalculator = (props) => {
   const [p, setP] = useState("");
   const [n, setN] = useState("");
   const [r, setR] = useState("");
-  // const [emi, setEMI] = useState("");
-  const handleCalEMI = () => {
-    const si = (p * n * r) / 100;
-    const repayAmount = Number(p) + Number(si);
-    const emiLocal = Math.floor(repayAmount / (n * 12));
-    return emiLocal;
-  };
-const emi = useMemo(()=>handleCalEMI(),[p,n,r])
-  //component did updte / component will update ---Class Compnent
-  // useEffect(()=>{
-  //   handleCalEMI();
+  const [emi, setEMI] = useState("");
+  const [table, setTable] = useState(false);
+  const [history, setHistory] = useState([]);
+  const [clearHistory, setClearHistory] = useState([]);
 
-  // },[p,n,r])
+  let balance = emi * n;
+  const arr = [];
+
+  for (let i = 1; i <= n; i++) {
+    balance -= emi;
+    arr.push(balance);
+  }
+
+  const handleCalEMI = () => {
+    const si = (p * (n / 12) * r) / 100;
+    const repayAmount = Number(p) + Number(si);
+    const emiLocal = Math.ceil(repayAmount / n);
+    setEMI(emiLocal);
+    setTable(true);
+    const data = {
+      principle: p,
+      months: n,
+      interest: r,
+      emi: emi,
+    };
+    setHistory((prevHistory) => {
+      if (history.length < 10) {
+        return [data, ...prevHistory];
+      } else {
+        return [data];
+      }
+    });
+  };
 
   return (
     <div>
-      <h1>EMI Calculator</h1>
+      <div className="calc">
+        <div className="header">
+          <h1>EMI Calculator</h1>
+          <button onClick={() => props.onLogOut()} className="logout-btn">
+            Log Out
+          </button>
+        </div>
+        <EMIinputs
+          setedN={setN}
+          setedR={setR}
+          setedP={setP}
+          emiHandeler={handleCalEMI}
+        />
+        <h1>EMI :{emi}</h1>
+      </div>
       <br />
-
-      <Card className="Calc">
-        <Row>
-          <Col md={1}></Col>
-          <Col md={3}>
-            <Form.Control
-              className="input1"
-              type="number"
-              placeholder="Principle"
-              onChange={(e) => setP(e.target.value)}
-            />
-          </Col>
-          <Col md={3}>
-            <Form.Control
-              className="input2"
-              type="number"
-              placeholder="Number Of Years"
-              onChange={(e) => setN(e.target.value)}
-            />
-          </Col>
-          <Col md={3}>
-            <Form.Control
-              className="input3"
-              type="number"
-              placeholder="Rate Of Intrset"
-              onChange={(e) => setR(e.target.value)}
-            />
-          </Col>
-          <Col md={2}>
-            <Button
-              variant="outline-success"
-              onClick={handleCalEMI}
-              className="button"
-            >
-              {/* <Button variant="outline-success" onClick={() => handleCalEMI()}> ---we can use both--- */}
-              Calculate EMI
-            </Button>
-          </Col>
-        </Row>
-        <Row>
-          <Col md={3}></Col>
-          <Col md={6}>
-            <h1>EMI :{emi}</h1>
-          </Col>
-        </Row>
-      </Card>
+      <div className="heads">
+        <h3 className="total">Total: {emi * n}</h3>
+        <h3 className="total-intereset">Total-Interest: {emi * n - p}</h3>
+        <h3 className="history-head">History</h3>
+        <button
+          onClick={() => setClearHistory(history.splice(0, history.length))}
+        >
+          Clear History
+        </button>
+      </div>
+      <div className="tabs">
+        <EMITable table={table} arr={arr} EMI={emi} />
+        <EMIHistory history={history} />
+      </div>
     </div>
   );
 };

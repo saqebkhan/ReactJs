@@ -1,5 +1,5 @@
-import React from 'react';
-import { HomeToDo } from './Sessions Practice/ToDoList/HomeToDo';
+import React from "react";
+// import { HomeToDo } from './Sessions Practice/ToDoList/HomeToDo';
 // import {Page} from "./Practice/Page";
 // import EmpDetails from './Redux/EmpDetails';
 // import {Form} from "react-bootstrap"
@@ -11,7 +11,7 @@ import { HomeToDo } from './Sessions Practice/ToDoList/HomeToDo';
 // import Contactus from './Router/Contactus';
 // import HeaderComponent from './Component/A_HeaderSection/HeaderComponent';
 // import BodySection from './Component/B_BodySection/BodySection';
-// import EMIcalculator from './EMIcalculator';
+import LogInPage from "./Sessions Practice/EMI Calculator/LogInPage";
 // import Piano from './Piano';
 // import {Row,Col, Card} from 'react-bootstrap'
 // import AudioPlayer from './AudioPlayer';
@@ -29,32 +29,31 @@ import { HomeToDo } from './Sessions Practice/ToDoList/HomeToDo';
 // import Dictionary from './Dictionary/Dictionary';
 // import Meaning from "./Dictionary/Meaning";
 
-
-
 function App() {
   return (
-<div className="App">
-{/* <HeaderComponent/> 
+    <div className="App">
+      <LogInPage />
+      {/* <HeaderComponent/> 
 <BodySection/> */}
-<HomeToDo />
-{/* <EmpDetails/> */}
-{/* <FetchingdataFromRedux/> */}
-{/* <EMIcalculator/> */}
-{/* <Row><Col md={4}><Card><h1>Low</h1><Piano/></Card></Col>
+      {/* <HomeToDo /> */}
+      {/* <EmpDetails/> */}
+      {/* <FetchingdataFromRedux/> */}
+      {/* <EMIcalculator/> */}
+      {/* <Row><Col md={4}><Card><h1>Low</h1><Piano/></Card></Col>
 <Col md={4}><Card><h1>Medium</h1><Piano/></Card></Col>
 <Col md={4}><Card><h1>High</h1><Piano/></Card></Col></Row>
 <br/> */}
-{/* <Parent/> */}
-{/* <LoginForm/>  */}
-{/* <Routerer/> */}
-{/* <AudioPlayer/> */}
-{/* <Counter /> */}
-{/* <Dictionary /> */}
-{/*<Meaning/> */}
-{/* <Practice/> */}
+      {/* <Parent/> */}
+      {/* <LoginForm/>  */}
+      {/* <Routerer/> */}
+      {/* <AudioPlayer/> */}
+      {/* <Counter /> */}
+      {/* <Dictionary /> */}
+      {/*<Meaning/> */}
+      {/* <Practice/> */}
 
-{/* <Clock/> */}
-{/* <Router>
+      {/* <Clock/> */}
+      {/* <Router>
 
 <Navigationbar/>
 <Switch>
@@ -79,16 +78,11 @@ function App() {
 </Switch>
 </Router> */}
 
-{/* <Idcard/> */}
-{/* <EmployeeList /> */}
-{/* <Page/> */}
-{/* <SectionArticle/> */}
-
-</div> 
+      {/* <Idcard/> */}
+      {/* <EmployeeList /> */}
+      {/* <Page/> */}
+      {/* <SectionArticle/> */}
+    </div>
   );
-};
-export default App; 
-
-
-   
-
+}
+export default App;
