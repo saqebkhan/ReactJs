@@ -3,12 +3,12 @@ import "./NewExpense.css";
 import ExpenseForm from "./ExpenseForm";
 
 const NewExpense = (props) => {
-    const newExpense = (expenseData) => {
-        props.onNewExpenseForm(expenseData)
-    }
+  const newExpense = (expenseData) => {
+    props.onNewExpenseForm(expenseData);
+  };
   return (
     <div className="new-expense">
-        <ExpenseForm onNewExpense={newExpense} />
+      <ExpenseForm onNewExpense={newExpense} />
     </div>
   );
 };
