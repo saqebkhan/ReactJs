@@ -30,7 +30,7 @@ function App() {
     },
   ];
   const newExpenseForm = (formExpenseData) => {
-   expenses.push(formExpenseData);
+   console.log(formExpenseData)
   }
   return (
     <div>
@@ -38,7 +38,8 @@ function App() {
       <Expenses items={expenses} />
     </div>
   );
-}
+};
 
 export default App;
+
 
