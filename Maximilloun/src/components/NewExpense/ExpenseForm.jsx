@@ -18,13 +18,13 @@ const ExpenseForm = (props) => {
   };
   const submitHandeler = (e) => {
     e.preventDefault();
-
-     const expenseData = {
+    const expenseData = {
+      id: Math.random().toString(),
       title: enteredTitle,
       amount: enteredAmount,
       date: new Date(enteredDate),
-    }
-    props.onNewExpense(expenseData)
+    };
+    props.onNewExpense(expenseData);
     setEnteredTitle("");
     setEnteredAmount("");
     setEnteredDate("");
@@ -36,7 +36,11 @@ const ExpenseForm = (props) => {
         <div className="new-expense__controls">
           <div className="new-expense__control">
             <label>Title</label>
-            <input type="text" value={enteredTitle} onChange={titleHandelerChanged} />
+            <input
+              type="text"
+              value={enteredTitle}
+              onChange={titleHandelerChanged}
+            />
           </div>
           <div className="new-expense__control">
             <label>Amount</label>
