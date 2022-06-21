@@ -11,11 +11,11 @@ import React from "react";
 // import Contactus from './Router/Contactus';
 // import HeaderComponent from './Component/A_HeaderSection/HeaderComponent';
 // import BodySection from './Component/B_BodySection/BodySection';
-import LogInPage from "./Sessions Practice/EMI Calculator/LogInPage";
+// import LogInPage from "./Sessions Practice/EMI Calculator/LogInPage";
 // import Piano from './Piano';
 // import {Row,Col, Card} from 'react-bootstrap'
 // import AudioPlayer from './AudioPlayer';
-// import {Idcard} from './Idcard'
+// import {Idcard} from './Components'
 // import Practice from './Sessions Practice/mini Counter/Practice';
 // import SectionArticle from './Sessions Practice/SectionArticle';
 // import Navigationbar from './Router/Navigationbar'
@@ -32,7 +32,7 @@ import LogInPage from "./Sessions Practice/EMI Calculator/LogInPage";
 function App() {
   return (
     <div className="App">
-      <LogInPage />
+      {/* <LogInPage /> */}
       {/* <HeaderComponent/> 
 <BodySection/> */}
       {/* <HomeToDo /> */}
